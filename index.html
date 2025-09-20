@@ -1,1 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Diwan | AI/ML + Ethical Hacking</title>
+    <meta name="description" content="AI/ML engineer. Ethical hacker. Python across Mac/Windows/Linux. Web3 ready.">
+    
+    <!-- Structured Data Only - No Spam -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Aditya Diwan",
+        "jobTitle": "AI/ML Engineer & Ethical Hacker",
+        "url": "https://adityadiwan.codes",
+        "sameAs": ["https://github.com/diwanaditya"],
+        "knowsAbout": ["AI/ML", "Ethical Hacking", "Python", "Web3"],
+        "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "name": "B.Tech Computer Engineering",
+            "educationalLevel": "Bachelor"
+        }
+    }
+    </script>
 
+    <!-- Preloads for Speed -->
+    <link rel="preload" href="assets/profile.webp" as="image">
+    <link rel="preload" href="style.css" as="style">
+    
+    <!-- Modern Stack -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen - Glitch Effect -->
+    <div id="loader" class="loader">
+        <div class="glitch" data-text="LOADING">LOADING</div>
+        <div class="scanline"></div>
+    </div>
+
+    <!-- Cursor Trail -->
+    <div id="cursor-trail"></div>
+
+    <!-- Floating Particles -->
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Navigation - Holographic -->
+    <nav class="nav-holo">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo glitch" data-text="AD">AD</a>
+            <div class="nav-links">
+                <a href="#work" class="nav-link">WORK</a>
+                <a href="#code" class="nav-link">CODE</a>
+                <a href="#skills" class="nav-link">SKILLS</a>
+                <a href="#contact" class="nav-link">CONNECT</a>
+            </div>
+            <div class="nav-web3">
+                <button id="wallet-btn" class="wallet-connect">
+                    <i class="fas fa-wallet"></i> Connect
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - 3D Space -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="glitch-main" data-text="ADITYA DIWAN">ADITYA DIWAN</h1>
+                <div class="hero-subtitle">
+                    <span class="typewriter"></span>
+                    <div class="subtitle-stack">
+                        <span>AI/ML ENGINEER</span>
+                        <span>ETHICAL HACKER</span>
+                        <span>WEB3 DEVELOPER</span>
+                        <span>PYTHON ARCHITECT</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-3d">
+                <div id="three-container"></div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Work Section - Holographic Cards -->
+    <section id="work" class="work-section">
+        <div class="section-header">
+            <h2 class="glitch" data-text="PROJECTS">PROJECTS</h2>
+        </div>
+        <div class="work-grid">
+            <div class="project-card" data-tilt>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/projects/netscope.webp" alt="NetScope - AI Network Intelligence">
+                        <h3>NETSCOPE</h3>
+                        <p>AI-Powered Network Recon</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Terminal-based ASN/IP intel with ML threat prediction. Python across Linux/Mac/Windows.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/diwanaditya/NetScope" target="_blank">CODE</a>
+                            <a href="#" class="demo-link">DEMO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-tilt>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/projects/pacghost.webp" alt="PacGhost - AI Terminal Game">
+                        <h3>PACGHOST</h3>
+                        <p>RL-Agent Terminal Game</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Reinforcement learning Pac-Man in Python terminal. Shows AI pathfinding + game dev skills.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/diwanaditya/PacGhost" target="_blank">CODE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-tilt>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/projects/pqc.webp" alt="PQC-5G6G - Quantum Crypto Research">
+                        <h3>PQC-5G6G</h3>
+                        <p>Post-Quantum Crypto</p>
+                    </div>
+                    <div class="card-back">
+                        <p>ML-hybrid quantum-resistant crypto for 5G/6G networks. Research + implementation.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/diwanaditya/pqc-5g6g-hybrid" target="_blank">RESEARCH</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web3 Tease -->
+            <div class="project-card web3-card" data-tilt>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="web3-badge">
+                            <i class="fas fa-ethereum"></i> COMING SOON
+                        </div>
+                        <h3>WEB3 AI</h3>
+                        <p>Decentralized ML Oracle</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Smart contract + AI model deployment. Zero-knowledge proofs for secure ML inference.</p>
+                        <div class="card-links">
+                            <a href="#" class="coming-soon">NOTIFY ME</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills - 3D Orbit -->
+    <section id="skills" class="skills-section">
+        <div class="section-header">
+            <h2 class="glitch" data-text="SKILL MATRIX">SKILL MATRIX</h2>
+        </div>
+        <div id="skill-orbit"></div>
+        <div class="skills-grid">
+            <div class="skill-item" data-skill="python">
+                <i class="fab fa-python"></i>
+                <span>PYTHON</span>
+                <div class="skill-bar"><div class="skill-fill" style="width: 99%"></div></div>
+            </div>
+            <div class="skill-item" data-skill="ai">
+                <i class="fas fa-brain"></i>
+                <span>AI/ML</span>
+                <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+            </div>
+            <div class="skill-item" data-skill="hacking">
+                <i class="fas fa-hammer"></i>
+                <span>ETHICAL HACKING</span>
+                <div class="skill-bar"><div class="skill-fill" style="width: 98%"></div></div>
+            </div>
+            <div class="skill-item" data-skill="web3">
+                <i class="fas fa-ethereum"></i>
+                <span>WEB3</span>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item" data-skill="fullstack">
+                <i class="fas fa-code"></i>
+                <span>FULLSTACK</span>
+                <div class="skill-bar"><div class="skill-fill" style="width: 92%"></div></div>
+            </div>
+            <div class="skill-item" data-skill="os">
+                <i class="fas fa-desktop"></i>
+                <span>OS MASTERY</span>
+                <div class="skill-bar"><div class="skill-fill" style="width: 97%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact - Terminal Style -->
+    <section id="contact" class="contact-section">
+        <div class="terminal">
+            <div class="terminal-header">
+                <span class="tab close"></span>
+                <span class="tab min"></span>
+                <span class="tab max"></span>
+            </div>
+            <div class="terminal-body">
+                <div class="prompt">aditya@cyberdeck:~$ </div>
+                <div class="input-line">
+                    <input type="text" id="contact-input" placeholder="echo 'your message here' | connect aditya">
+                </div>
+                <div class="output"></div>
+            </div>
+        </div>
+        <div class="social-holo">
+            <a href="https://github.com/diwanaditya" class="social-link" data-social="github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-link" data-social="linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="social-link" data-social="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
